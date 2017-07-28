@@ -12,11 +12,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'index.html'));
 });
-app.get('/', function(req, res){
+app.get('/register', function(req, res){
   res.sendFile(path.join(__dirname, 'registration.html'));
 });
-app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'Edit User profile.html'));
+app.get('/user', function(req, res){
+  res.sendFile(path.join(__dirname, 'user.html'));
 });
 
 //express server listen
